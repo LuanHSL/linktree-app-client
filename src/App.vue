@@ -1,15 +1,22 @@
 <template>
-  <header>
-    <QRCode />
-  </header>
+  <main class="flex justify-center">
+    <!-- <QRCode /> -->
+    <LinktreeMain />
+  </main>
 </template>
 
-<script setup>
-import QRCode from './components/QRCode.vue';
+<script>
+// import QRCode from './components/QRCode.vue';
+import LinktreeMain from './components/linktree/LinktreeMain.vue';
+
+export default {
+  name: 'App',
+  components: {
+    // QRCode,
+    LinktreeMain,
+  },
+};
 </script>
 
 <style>
-@import './assets/base.css';
-
-
 </style>
